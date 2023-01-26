@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> CSS layout</title>
+  <link rel="icon" href="img/range%20roverindex.jpeg">
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    body { font-family: Chandas}
+    /* style the header */
+    header {
+      background-color: gold;
+      padding: 20px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+    /* create two columns/boxes that floats next to each other*/
+    nav {
+      float: left;
+      width: 30%;
+      height: 300px;/* only for demonstration, should be removed*/
+      background: tomato;
+      padding: 20px;
+    }
+    /* style the list inside the menu*/
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    article{
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: steelblue;
+      height: 300px; /* only for demonstration, should be remove*/
+    }
+    /* clear floats after the columns */
+    section::after{
+      content: "";
+      display: table;
+      clear: both;
+    }
+    /* style the footer*/
+    footer{ background-color: #555555;
+    padding: 10px;
+    text-align: center;
+    color: white}
+    /* responsive layout- makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+      nav,article{ width:100%;
+      height: auto;
+      }
+    }
+p{font-size: 20px;
+font-family: Ubuntu;
+text-align: center;
+background-color: violet}
+
+  </style>
+</head>
+<body>
+<h1> CSS Layout Float</h1>
+<p>in the world of today technology is one of the most demanding sites.ICT is taught right from the primary schools. currently the new curriculum has enabled children to carry on with ict studies in their junior secondary schools upto the senior secondary schools </p>
+
+<p> technology has enabled many people to join online business and hence created employment to many kenyan youths</p>
+<header>
+  <h2> countries
+  </h2>
+</header>
+<section>
+  <nav>
+    <ul>
+      <l1> <a href="kenya.html"> Kenya</a> </l1>
+      <l1> <a href="#">Tanzania</a></l1>
+      <li> <a href="#"> South Africa</a> </li>
+    </ul>
+  </nav>
+  <article>
+    <h1> South Africa</h1>
+    <p>South Africa is one of the developed countries in Africa.It is highly populated since it has over 13 million inhabitants.it is famously known due to the presence of Gold</p>
+    <p> South Africa has also had strong leaders before such as Nelson Mandela.</p>
+  </article>
+</section>
+<table bgcolor="white">
+  <tr bgcolor="#ee82ee">
+    <th> full names</th>
+    <th> country</th>
+    <th> age</th>
+  </tr>
+  <tr bgcolor="#ee82ee">
+    <th> Ashley Nelima</th>
+    <th> Kenya</th>
+    <th> 17</th>
+  </tr>
+</table>
+<footer>
+  <p> know your country
+    @NELIMA
+  </p>
+  <img src="img/range%20roverindex.jpeg">
+</footer>
+</body>
+</html>

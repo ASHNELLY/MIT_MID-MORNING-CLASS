@@ -1,0 +1,22 @@
+p{
+  color:blue;
+  font-family: Chandas;
+  font-size: 12px;}
+button{ padding: 20px;
+color: black}
+body{
+
+
+}
+table{ width: 100%;
+border-collapse: collapse;
+}
+th,td{border:3px solid red;
+font-family: Chandas;
+text-align: center;
+padding:5px;
+color:darkblue }
+tr:nth-child( even){
+background-color: aliceblue;
+
+}

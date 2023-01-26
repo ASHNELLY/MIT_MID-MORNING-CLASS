@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forms</title>
+  <style>
+    label{
+      color:black;
+      padding: 5px;
+    }
+    input{
+      background-color: lavender;
+      color: black;
+      padding: 5px;
+
+    }
+    h2{
+      color: indigo;
+      text-align: center;
+
+    }
+    body{
+      background-color:lavender;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<h2><b>Student Registration Form</b></h2>
+<form action="iframe.html" method="get">
+  <label for="Fname">Full Names</label>
+  <input type="text" id="Fname"placeholder="Enter your name"><br>
+  <label for="Email">Email Address</label>
+    <input type="email" id="Email"placeholder="Enter your Email Address"><br>
+  <label for="phone">Phone Number</label>
+  <input type="text" id="phone"placeholder="Enter your phone number"><br>
+  <label for="dbirth">Date of Birth</label>
+  <input type="date" id="dbirth"><br>
+  <label for="Pass">Password</label>
+  <input type="password" id="Pass"><br>
+  <label for="Male">Male</label>
+  <input type="radio" id="Male" name="Gender">
+  <label for="fe">Female</label>
+  <input type="radio" id="fe" name="Gender"><br>
+  <label for="Course">Courses offered</label>
+  <select name="Course" id="Course">
+  <option value="Java Script">Java script</option>
+  <option value="Python ">Python</option>
+  <option value="CSS">CSS</option>
+  <option value="HTML">HTML</option>
+  <option value="Bootstrap">Bootstrap</option>
+  <option value="Full stack developmet">Full Stack Developent</option>
+  </select>
+  <label for="image">Upload picture</label>
+  <input type="file" id="image">
+    <input type="Submit"value="Register here!!!">
+
+</form>
+<button type="button" onclick="alert('Safari lab mid-morning class')">Press</button>
+</body>
+</html>
